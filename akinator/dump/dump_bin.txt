@@ -1,0 +1,20 @@
+digraph G{
+    rankdir = TB;
+    node[color = "#000000", fontsize = 10];
+    edge[color = "#000000", fontsize = 5];
+"0x6030000000a0" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: cheburek | {<left> LEFT | <right> RIGHT}}"];
+"0x603000000070" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: student | {<left> LEFT | <right> RIGHT}}"];
+        "0x603000000070": <left> -> "0x6030000000a0" [color = "#000000", label = "NO"]
+"0x603000000040" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: animals | {<left> LEFT | <right> RIGHT}}"];
+        "0x603000000040": <left> -> "0x603000000070" [color = "#000000", label = "NO"]
+"0x603000000040": <right> -> "0x6030000000d0" [color = "#000000", label = "YES"]
+"0x603000000130" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: phone | {<left> LEFT | <right> RIGHT}}"];
+"0x603000000100" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: dog | {<left> LEFT | <right> RIGHT}}"];
+        "0x603000000100": <left> -> "0x603000000130" [color = "#000000", label = "NO"]
+"0x603000000100": <right> -> "0x603000000160" [color = "#000000", label = "YES"]
+"0x603000000190" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: cucumber | {<left> LEFT | <right> RIGHT}}"];
+"0x603000000160" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: bobik | {<left> LEFT | <right> RIGHT}}"];
+        "0x603000000160": <left> -> "0x603000000190" [color = "#000000", label = "NO"]
+"0x6030000000d0" [shape = Mrecord, style = filled, fillcolor = "#FFFFFF", color = "#ff8333", label = "{DATA: 1,5ka | {<left> LEFT | <right> RIGHT}}"];
+        "0x6030000000d0": <left> -> "0x603000000100" [color = "#000000", label = "NO"]
+}

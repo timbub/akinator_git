@@ -1,0 +1,32 @@
+{
+"animals"
+    {
+    "student"
+        {
+        "cheburek"
+        }
+        {
+        }
+    }
+    {
+    "1,5ka"
+        {
+        "dog"
+            {
+            "phone"
+            }
+            {
+            "bobik"
+                {
+                "cucumber"
+                }
+                {
+                }
+            }
+        }
+        {
+        "ura!"
+        }
+    }
+}
+
